@@ -52,7 +52,7 @@ void randomDFS(int i, int j, int n, int d){
 		x = move.first;
 		y = move.second;
 		if( !check(i + x, j + y, n) ) continue;
-    	maze[ i + x/2 ][ j + y/2 ] = true;
+    		maze[ i + x/2 ][ j + y/2 ] = true;
 		randomDFS( i + x, j + y, n, d + 1);
 	}
 
